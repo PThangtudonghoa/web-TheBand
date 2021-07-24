@@ -1,0 +1,473 @@
+.nav_bar{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.nav_bar-list{
+    list-style: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-left: 4px;
+}
+.nav_bar-item{
+    padding: 16px 18px;
+}
+.nav_bar-item a, .nav_bar-menu-item a{
+    text-decoration: none;
+    color: white;
+}
+.nav_bar-item:hover{
+    cursor: pointer;
+    background-color: #CCCCCC;
+    color: #333;
+}
+
+.nav_bar-item-more{
+    width: 144px;
+    position: absolute;
+    top: 100%;
+    left: 358px;
+    background-color: white;
+    box-shadow: 0 0 4px #333;
+    display: none;
+}
+.nav_bar-item-more-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #333;
+    font-size: 16px;
+}
+.nav_bar-item-more-item{
+    padding: 12px 12px;
+
+}
+.nav_bar-item-more-item:hover{
+    background-color: #CCCCCC;
+    cursor: pointer;
+}
+.nav_bar-item-mores:hover .nav_bar-item-more{
+    display: block;
+}
+.nav_bar-search{
+    width: 58px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.nav_bar-search-icon{
+    font-size: 18px;
+    color: white;
+}
+.nav_bar-search:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+.nav_bar-menu{
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+.nav_bar-menu-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav_bar-menu-item{
+    color: white;
+    font-size: 16px;
+    padding: 12px 18px;
+}
+.nav_bar-menu-item:hover{
+    cursor: pointer;
+    background-color: #CCCCCC;
+    color: #333;
+}
+
+#nav_bar-checkbox:checked ~ .nav_bar-menu{
+    display: block;
+}
+
+/* HOme */
+.home-img{
+    margin-top: 48px;
+    padding-top: 50%;
+    background: url('/assets/img/Archybak_live_band.jpg') top center / cover no-repeat;
+}
+.home-text{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -54px;
+    left: 0;
+}
+.home-text h2{
+    font-size: 18px;
+}
+.home-text h3{
+    font-size: 16px;
+}
+
+/* The Band */
+.band-container{
+    display: flex;
+    padding: 100px 0;
+}
+.band{
+    margin: 0 auto; 
+    text-align: center;
+    width: 774px;
+}
+
+.band-header h1{
+    font-size: 28px;
+    color: #333;
+    padding-top: 0;
+    margin-top: 0;
+    letter-spacing: 6px;
+}
+.band-header h3{
+    font-size: 18px;
+    color: rgb(136, 132, 132)
+}
+.band-header p{
+    font-size: 16px;
+    text-align: justify;
+}
+.band-body{
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.col h3{
+    font-size: 16px;
+    color: #333;
+}
+
+.band-body-item-img{
+    width: 62%;
+    padding-top: 62%;
+    background: url('/assets/img/bandmember.jpg') top center / contain no-repeat;
+    
+}
+
+/* Tour Dates */
+.tour-day-container{
+    background-color: black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.tour-day{
+    background-color: black;
+    width: 774px;
+    margin: auto;
+
+}
+.tour-day-header{
+    text-align: center;
+}
+.tour-day-header h2{
+    font-size: 28px;
+    color: white;
+}
+.tour-day-header h3{
+    display: block;
+    font-size: 18px;
+    color: rgb(214, 214, 214);
+    margin: 34px 0;
+}
+.tour-day-intro{
+    width: 100%;
+    background-color: white;
+    margin-bottom: 32px;
+
+}
+.tour-day-intro-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* .tour-day-intro-item{
+    display: flex;
+} */
+.tour-day-intro-item{
+    font-size: 16px;
+    color: rgb(143, 143, 143);
+    padding: 12px 12px;
+    border: 1px solid rgb(207, 207, 207)
+}
+.tour-day-detail{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+}
+.tour-day-detail-item{
+    background-color: rgb(0, 0, 0);
+}
+.tour-day-detail-item-item{
+    background-color: white;
+    margin-bottom: 14px;
+}
+.tour-day-detail-img{
+    padding-top: 75%;
+}
+.tour-day-detail-info{
+    margin-left: 14px;
+    padding-bottom: 16px;
+}
+.tour-day-detail-item h2{
+    font-size: 18px;
+}
+.tour-day-detail-item h3{
+    font-size: 16px;
+}
+.tour-day-detail-item p{
+    font-size: 14px;
+}
+.tour-day-detail-item button{
+    width: 106px;
+    height: 38px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+}
+.tour-day-detail-item button:hover{
+    background-color: #CCCCCC;
+    color: #333;
+    cursor: pointer;
+}
+.sold-out{
+    background-color: #F44336;
+    color: white;
+    padding: 2px 4px;
+    margin-left: 12px;
+}
+.three{
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 26px;
+    float: right;
+    margin-right: 24px;
+    transform: translateY(-4px);
+}
+
+
+/* Contact */
+.contact-content{
+    width: 774px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 54px 0;
+    padding-bottom: 110px;
+}
+.contact-content-header{
+    text-align: center;
+}
+.contact-content-header h2{
+    font-size: 28px;
+    color: #333;
+    padding: 0;
+    margin: 24px 0;
+    letter-spacing: 2px;
+}
+.contact-content-header h3{
+    font-size: 16px;
+    color:#b4b2b2;
+    margin-bottom: 46px;
+    margin-top: 38px;
+    padding: 0;
+    font-weight: 400;
+    font-style: oblique;
+
+}
+.contact-info{
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 22px;
+
+}
+.contact-input{
+    display: flex;
+    margin-bottom: 6px;
+}
+.contact-input-item-1, .contact-input-item-2, .contact-input-item-3{
+    width: 50%;
+    height: 45px;
+    padding-left: 8px;
+    border: 1px solid rgb(202, 202, 202)
+}
+.contact-input-item-1{
+    margin-right: 8px;
+}
+.contact-input-item-2{
+    margin-left: 8px;
+}
+.contact-input-item-3{
+    width: 100%;
+    margin-top: 8px;
+}
+
+.contact-btn{
+    width: 72px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    float: right;
+    margin-top: 12px;
+    font-size: 17px;
+    border: none;
+}
+.contact-btn:hover{
+    cursor: pointer;
+    background-color: rgb(116, 114, 114);
+}
+.contact-info-icon{
+    margin-right: 16px;
+}
+.contact-info-icon-1{
+    margin-right: 20px;
+}
+
+/* Map */
+.map{
+    padding-top: 56%;
+    background-image: url('/assets/img/map.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Footer */
+.footer{
+    padding: 100px 0;
+    text-align: center;
+}
+.footer-icon{
+    font-size: 26px;
+    margin: 0 4px;
+    opacity: 0.6;
+
+}
+.footer-icon i:hover{
+    cursor: pointer;
+}
+.footer-info{
+    font-size: 16px;
+    color: black;
+    opacity: 0.6;
+    margin-top: 28px;
+    z-index: 2;
+}
+
+/* overlay */
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+.overlay-none{
+    display: none;
+}
+.form-tickets{
+    width: 800px;
+    background-color: white;
+    margin: auto;
+    margin-top: 130px;
+    animation: slideOut ease-out 0.3s;
+}
+.form-tickets-header{
+    width: 100%;
+    height: 100px;
+    background-color: #009688;
+    line-height: 100px;
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    letter-spacing: 2px;
+}
+.form-tickets-pay{
+    width: 100%;
+    padding: 12px 12px;
+}
+.form-tickets-pay-lable-1{
+    font-size: 16px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    color: #333;
+}
+.form-tickets-pay input{
+    width: 100%;
+    border: 1px solid rgb(167, 166, 166);
+    height: 36px;
+    outline: none;
+    padding-left: 12px;
+}
+.form-tickets-pay-lable-1 i{
+    margin-right: 4px;
+}
+.form-tickets-pay-btn{
+    width: 100%;
+    height: 38px;
+    background-color: #009688;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-top: 12px;
+}
+.form-tickets-pay-btn:hover{
+    cursor: pointer;
+    background-color: #02554d;
+}
+.form-tickets-pay-btn i{
+    font-size: 14px;
+    margin-left: 6px;
+}
+.form-tickets-pay-footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+}
+.form-tickets-pay-footer button{
+    width: 70px;
+    height: 32px;
+    background-color: #F44336;
+    color: white;
+    border: none;
+    outline: none;
+}
+.form-tickets-pay-footer button:hover{
+    cursor: pointer;
+    background-color: rgb(167, 166, 166);
+}
+.form-tickets-pay-footer{
+    font-size: 17px;
+}
+.form-tickets-pay-footer a{
+    color: #009688;
+}
+.close-icon{
+    margin-left: 4px;
+}

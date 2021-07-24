@@ -1,0 +1,49 @@
+:root{
+    --white-color: white;
+    --black-color: black;
+    --text-color: #333;
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 790px) {
+    .band{
+        width: 95%;
+    }
+    .band-body-item-img {
+        width: 58%;
+    }
+    .tour-day{
+        width: 95%;
+    }
+    .contact-content{
+        width: 95%;
+    }
+    .form-tickets{
+        width: 95%;
+    }
+    .form-tickets{
+        margin-top: 70px;
+    }
+}
+@keyframes slideOut{
+    from{
+        opacity: 0;
+        transform: translateY(-135%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
